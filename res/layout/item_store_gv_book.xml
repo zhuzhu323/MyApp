@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:ignore="UseCompoundDrawables,HardcodedText,ContentDescription" >
+
+    <ImageView
+        android:id="@+id/iv_item_store_book"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/tv_item_store_book"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="New Text"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription,ObsoleteLayoutParam" >
+
+    <RelativeLayout
+        android:id="@+id/ivBookDetialTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shouye_bar_top" >
+
+        <TextView
+            android:id="@+id/tvBookDetialTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情介绍"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivBookDetialBackground"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/ivBookDetialTitle"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/touxiang" />
+
+    <ImageView
+        android:id="@+id/ivDetialBookPic"
+        android:layout_width="96dp"
+        android:layout_height="135dp"
+        android:layout_alignLeft="@+id/ivBookDetialBackground"
+        android:layout_alignTop="@+id/ivBookDetialBackground"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/ivDetialBookPic"
+        android:layout_toEndOf="@+id/ivDetialBookPic"
+        android:layout_toRightOf="@+id/ivDetialBookPic"
+        android:orientation="horizontal"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tvDetialTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="花千骨"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvDetialPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="200"
+            android:textColor="#ff0000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/ibtDetialCollect"
+            android:layout_width="36dp"
+            android:layout_height="23dp"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/xiangqing_button"
+            android:onClick="doClick"
+            android:text="收藏"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ivDetialBookPic"
+        android:layout_toRightOf="@+id/ivDetialBookPic"
+        android:text="作者："
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv02"
+        android:text="类别:"
+        android:textColor="#ffffff"
+        android:textSize="14sp" 
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv01"
+        android:layout_alignLeft="@+id/tv01"
+        android:layout_alignStart="@+id/tv01"/>
+    <TextView
+        android:id="@+id/tv03"
+        android:text="出版时间:"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv02"
+        android:layout_alignLeft="@+id/tv02"
+        android:layout_alignStart="@+id/tv02"/>
+
+    <TextView
+        android:id="@+id/tv04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv03"
+        android:layout_alignStart="@+id/tv03"
+        android:layout_below="@+id/tv03"
+        android:layout_marginTop="5dp"
+        android:text="出版社:"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <TextView 
+        android:id="@+id/tvDetialAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv01"
+        android:layout_alignBottom="@+id/tv01"
+        android:layout_marginLeft="3dp"
+        android:text="xxxx"
+         android:textColor="#ffffff"
+        android:textSize="14sp" 
+        />
+  <TextView
+        android:id="@+id/tvDetialLeibie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv02"
+        android:layout_toRightOf="@+id/tv02"
+        android:layout_marginLeft="3dp"
+        android:text="xxxx"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <TextView 
+        android:id="@+id/tvDetialTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv03"
+        android:layout_alignBottom="@+id/tv03"
+        android:layout_marginLeft="3dp"
+        android:text="xxxx"
+         android:textColor="#ffffff"
+        android:textSize="14sp" 
+        />
+    <TextView 
+        android:id="@+id/tvDetialPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv04"
+        android:layout_alignBottom="@+id/tv04"
+        android:layout_marginLeft="3dp"
+        android:text="xxxx" 
+         android:textColor="#ffffff"
+        android:textSize="14sp" 
+        android:singleLine="true"
+        />
+  
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="内容简介"
+        android:id="@+id/tvTotalDesc"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="#eeeeee"
+        android:layout_below="@+id/ivBookDetialBackground"/>
+
+ <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalDesc"
+        android:scrollbars="none" >
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddToCart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTotalDesc"
+        android:lineSpacingExtra="5dp"
+        android:padding="10dp"
+        android:text="这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事..这是一个悲伤的故事.."
+        android:textSize="14sp" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加购物车"
+        android:id="@+id/btnAddToCart"
+        android:background="@drawable/xiangqing_button"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="addCart"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

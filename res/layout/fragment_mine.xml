@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/wode_bg_header"
+        android:id="@+id/relativeMineHeader">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/shouye_bar_top"
+            android:padding="9dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的TBOOK"
+                android:id="@+id/textView"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <cn.zjf.book.ui.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivMinePhoto"
+            android:onClick="doClick"
+            android:src="@drawable/touxiang"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的昵称"
+            android:id="@+id/tvNickname"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeMineHeader"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:id="@+id/itemShoucang"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivShoucang"
+                android:src="@drawable/mine_ico_shoucang"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="我收藏的商品"
+                android:id="@+id/tvShoucang"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivShoucang"
+                android:layout_toEndOf="@+id/ivShoucang"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/ivShoucang"
+                android:layout_toEndOf="@+id/ivShoucang"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvShoucang"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemAddress"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivAddress"
+                android:src="@drawable/mine_ico_address"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="我的地址管理"
+                android:id="@+id/tvAddress"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivAddress"
+                android:layout_toEndOf="@+id/ivAddress"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/ivAddress"
+                android:layout_toEndOf="@+id/ivAddress"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvAddress"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemOrder"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivOrder"
+                android:src="@drawable/mine_ico_order"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="我的订单"
+                android:id="@+id/tvOrder"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivOrder"
+                android:layout_toEndOf="@+id/ivOrder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/ivOrder"
+                android:layout_toEndOf="@+id/ivOrder"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvOrder"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemSettings"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivSettings"
+                android:src="@drawable/mine_ico_settings"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="设置"
+                android:id="@+id/tvSettings"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivSettings"
+                android:layout_toEndOf="@+id/ivSettings"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:id="@+id/textView43"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/ivSettings"
+                android:layout_toEndOf="@+id/ivSettings"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvSettings"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemExit"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivExit"
+                android:src="@drawable/mine_ico_exit"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="退出"
+                android:id="@+id/tvExit"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivExit"
+                android:layout_toEndOf="@+id/ivExit"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:id="@+id/textView53"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/ivExit"
+                android:layout_toEndOf="@+id/ivExit"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvExit"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
